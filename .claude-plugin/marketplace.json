@@ -1,0 +1,16 @@
+{
+  "name": "plugin-action-confirmation",
+  "owner": {
+    "name": "ADRenaline Suite"
+  },
+  "plugins": [
+    {
+      "name": "plugin-action-confirmation",
+      "source": "./",
+      "description": "Stops a write until the person has typed the exact allow phrase in this turn."
+    }
+  ],
+  "metadata": {
+    "description": "Marketplace with the Action Confirmation plugin."
+  }
+}

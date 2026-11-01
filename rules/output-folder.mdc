@@ -1,0 +1,14 @@
+---
+description: This plugin writes no project files
+alwaysApply: true
+---
+
+# Output folder
+
+This plugin writes no file in the project. It does not create `adrenaline/`, `STATUS.md`, or `ORIGIN.json`.
+
+A write to a database, a remote, or a deploy proceeds only when the person wrote the exact phrase in this turn. The phrase is `allow-<class>: <target> — <what>`. One phrase covers one write. A wildcard is not a phrase.
+
+Postgres is a database. INSERT and UPDATE use `allow-db-update`. DELETE, TRUNCATE, DROP, and ALTER use `allow-db-delete`. The target is the database name the person used. There is no `postgres` class.
+
+Do not confirm a read. Do not confirm a local edit, including `git add` and `git commit`.

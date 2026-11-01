@@ -1,0 +1,15 @@
+{
+  "name": "plugin-action-confirmation",
+  "description": "Stops a write until the person has typed the exact allow phrase in this turn.",
+  "version": "0.0.1",
+  "author": {
+    "name": "d-mente"
+  },
+  "license": "MIT",
+  "keywords": [
+    "confirmation",
+    "excessive-agency",
+    "human-approval"
+  ],
+  "repository": "https://github.com/ADRenaline-Suite/plugin-action-confirmation"
+}

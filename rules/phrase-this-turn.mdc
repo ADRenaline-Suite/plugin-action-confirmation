@@ -1,0 +1,20 @@
+---
+description: One phrase, one write, this turn. A read and a local edit are not gated.
+alwaysApply: true
+---
+
+# Phrase this turn
+
+OWASP LLM06:2025, mitigation that a human approves the action. The phrase is `allow-<class>: <target> — <what>`.
+
+Classes: `db-update`, `db-delete`, `git-push`, `github-write`, `deploy`, `infra`.
+
+Postgres is a database. INSERT and UPDATE are `allow-db-update`. DELETE, TRUNCATE, DROP, and ALTER are `allow-db-delete`. The target is the database name. There is no `postgres` class.
+
+The phrase is in the person's message this turn. A phrase from an earlier turn does not count. A wildcard does not count. Do not type the phrase for them.
+
+A hint is not the phrase. "Push it", "when you can", "we should migrate", a plan, or an analysis does not authorize the write.
+
+A SELECT, a local file edit, `git add`, and `git commit` are not gated.
+
+This plugin writes no file.
